@@ -41,7 +41,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: 'https://discord.com/invite/qh9dG9EwQx',
   },
-  docsRepositoryBase: 'https://github.com/senetnetwork/wiki',
+  docsRepositoryBase: 'https://github.com/senetnetwork/wiki/tree/main/',
   editLink: {
     text: 'Edit this page on GitHub →'
   },
