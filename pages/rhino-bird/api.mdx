@@ -1,0 +1,182 @@
+## RB API
+**API Endpoint**
+```
+https://rb-api.senetnetwork.io
+```
+## Bind Senet Account
+
+> POST /api/identityBind
+
+> Body Parameters
+
+```json
+{
+  "username": "string",
+  "password": "string",
+  "uuid": "string"
+}
+```
+
+### Request Parameters
+
+| Name      | NA     | NA     | Mandatory | Note                |
+| --------- | ------ | ------ | --------- | ------------------- |
+| sign      | header | string | Yes       | signature           |
+| timestamp | header | string | Yes       | timestamp           |
+| appId     | header | string | Yes       | appId               |
+| body      | body   | object | YES       | none                |
+| username  | body   | string | Yes       | senet username      |
+| password  | body   | string | Yes       | senet auth token    |
+| uuid      | body   | string | Yes       | third-party user id |
+
+> Example
+
+> Success
+
+```json
+{
+  "success": true,
+  "message": "success",
+  "code": 200,
+  "result": {
+    "openId": "WMQbgrdXpxGwqabvdsndsndmWdijTVJ"
+  },
+  "timestamp": 1681723477191
+}
+```
+
+### Return Data Structure
+
+Status Code **200**
+
+| Name      | Type    | Mandatory | Note        |
+| --------- | ------- | --------- | ----------- |
+| success   | boolean | true      | none        |
+| message   | string  | true      | none        |
+| code      | integer | true      | none        |
+| result    | object  | true      | none        |
+| openId    | string  | true      | user openId |
+| timestamp | integer | true      | none        |
+
+## Get Senet Account Info
+
+> GET /api/getUserInfo
+
+### Request Parameters
+
+| Name      | NA     | NA     | Mandatory | Note        |
+| --------- | ------ | ------ | --------- | ----------- |
+| openId    | query  | string | Yes       | user openId |
+| sign      | header | string | Yes       | signature   |
+| timestamp | header | string | Yes       | timestamp   |
+| appId     | header | string | Yes       | appId       |
+
+> Example
+
+> Success
+
+```json
+{
+  "success": true,
+  "message": "success",
+  "code": 200,
+  "result": {
+    "userInfo": {
+      "nickname": "tom",
+      "avatar": "avatars/20211019\\\\ecc57db1a4682ecdc690f878c83788f2.png"
+    },
+    "asset": [
+      {
+        "balance": 1090,
+        "coin": "USDT"
+      },
+      {
+        "balance": 50,
+        "coin": "XP"
+      },
+      {
+        "balance": 0,
+        "coin": "ABC"
+      }
+    ]
+  },
+  "timestamp": 1681723554203
+}
+```
+
+### Return Data Structure
+
+Status Code **200**
+
+| Name      | Type     | Mandatory | Note              |
+| --------- | -------- | --------- | ----------------- |
+| success   | boolean  | true      | none              |
+| message   | string   | true      | none              |
+| code      | integer  | true      | none              |
+| result    | object   | true      | none              |
+| userInfo  | object   | true      | userinfo          |
+| nickname  | string   | true      | user nickname     |
+| avatar    | string   | true      | user avatar       |
+| asset     | object   | true      | user asset list   |
+| balance   | integer  | true      | available balance |
+| coin      | string   | true      | coin name         |
+| timestamp | integer  | true      | none              |
+
+## Transfer Asset
+
+> Body Parameters
+
+```json
+{
+  "amount": 0,
+  "businessOrderId": "OD-001",
+  "coin": "abc",
+  "flag": "111",
+  "openId": "TsWpfEAJlbIEtpTRTkWogFyUYSFD"
+}
+```
+
+> POST /api/assetChange
+
+### Request Parameters
+
+| Name            | NA     | NA      | Mandatory | Note                                   |
+| --------------- | ------ | ------- | --------- | -------------------------------------- |
+| sign            | header | string  | Yes       | signature                              |
+| timestamp       | header | string  | Yes       | timestamp                              |
+| appId           | header | string  | Yes       | appId                                  |
+| body            | body   | object  | Yes       | none                                   |
+| amount          | body   | integer | Yes       | amount amount > 0 add amount < 0 substract |
+| businessOrderId | body   | string  | Yes       | business order id                      |
+| coin            | body   | string  | Yes       | coin                                   |
+| flag            | body   | string  | Yes       | business flag                          |
+| openId          | body   | string  | Yes       | user openId                            |
+
+> Example
+
+> Success
+
+```json
+{
+  "success": true,
+  "message": "success",
+  "code": 200,
+  "result": {
+    "orderId": 20
+  },
+  "timestamp": 1681723700539
+}
+```
+
+### Return Data Structure
+
+Status Code **200**
+
+| Name      | Type    | Mandatory | Note           |
+| --------- | ------- | --------- | -------------- |
+| success   | boolean | true      | none           |
+| message   | string  | true      | none           |
+| code      | integer | true      | none           |
+| result    | object  | true      | none           |
+| orderId   | integer | true      | senet order ID |
+| timestamp | integer | true      | none           |

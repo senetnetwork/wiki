@@ -1,0 +1,43 @@
+{
+    "-- overview": {
+        "type": "separator",
+        "title": "OVERVIEW"
+    },
+    "index": "Introduction",
+    "guide": "Quick Start",
+    "submit": {
+        "title": "Submit Game ↗",
+        "href": "",
+        "newWindow": false
+    },
+    "-- solutions": {
+        "type": "separator",
+        "title": "SOLUTIONS"
+    },
+    "senet-auth": "Senet Auth",
+    "rhino-bird": "Rhino bird",
+    "-- integration": {
+        "type": "separator",
+        "title": "INTEGRATION"
+    },
+    "senet-chain": "Senet Chain",
+    "senet-game-platform": "Senet Game Platform",
+    "senet-service-console": "Senet Service Console",
+    "-- resource": {
+        "type": "separator",
+        "title": "RESOURCE"
+    },
+    "blog": {
+        "title": "Blog ↗",
+        "href": "https://senetnetwork.medium.com",
+        "newWindow": true
+    },
+    "changelog": "Change Log",
+    "support": "Support",
+    "-- more": {
+        "type": "separator",
+        "title": "MORE"
+    },
+    "FAQ": "FAQ",
+    "legal": "Legal"
+}

@@ -1,0 +1,61 @@
+import { Card, Cards } from 'nextra-theme-docs'
+
+## What is Senet Chain?
+
+A high-performance public chain designed for games. Inspired by Ethereum, Senet is trying its best to build a blockchain dedicated to gaming. It executes smart contracts based on EVM and uses "POS" as its consensus mechanism. What's more, the layer1 is the Senet blockchain, Layer 2 will be used to transmit and record data such as game transactions, the service layer will have wallet services, node services, advertising services, algorithms service, game virtual launchers, big data and other services, in addition to middleware, we will also provide zero download playback of mobile games. And on top of all this will be the game platform hosted by our application layer - **Senet Game Platform**.
+
+## Why need Senet Chain?
+
+Public blockchain networks charge transaction fees or require collateral to protect and maintain their systems, but the activity and transaction volume of traditional games have increased significantly, which will bring huge cost burdens to developers or users  and finally will become resistance to games market . Due to low TPS and fees, game dApp developers cannot design their games in a way that actively generates transactions. While the transaction frequency is ultimately directly linked to the amount of game content, so current game dApps can only have a relatively simple structure.
+
+However, the successful integration of blockchain and games requires a system with high TPS and scalability, and will not generate excessive transaction fees. Therefore, in the Senet 1.0 stage, We will deploy a separate blockchain layer 2 senet network for expansion, the layer 2 network will be used for game transaction nodes, and the layer 2 node data will be regularly submitted to the layer one senet mainnet, so as to reduce the blocking of the first layer, improve TPS and reduce GAS. 
+
+## What are the features of Senet Chain?
+
+### Senet Chain's Performance
+
+- TPS: 5000+
+- Average block interval: 3s
+
+### Consensus Mechanism
+
+PoS consensus mechanism: it has the characteristics of low transaction cost, low transaction delay, and high transaction concurrency.
+
+The maximum number of validators supported is 28.
+
+### Economic Model
+
+The endogenous token on the chain is SET; the transactions consume SET as gas fee.
+
+Miners pledge SET to become validator nodes. The reward of nodes is gas fee, which is distributed according to the mortgage proportion.
+
+### Layer2
+
+An open Layer 2 protocol established on the Senet Chain, dedicated to NFT (non-fungible token) transactions and transactions in games. It mainly solves the problems of transaction congestion, high fees and slow speed in the Senet network, and provides a faster, more efficient and lower-cost game transaction solution.
+
+The implementation method is to use Optimistic Rollup-based technology, while maintaining decentralization and security, the number of transactions and the cost of calculation are greatly reduced. Second-level transaction confirmation can be achieved, and there is no need to pay high Gas fees. At the same time, a set of APIs such as the main network and DEX are provided, and developers can easily access them for NFT-related game development.
+
+### Cross-Chain
+
+Assets such as BTC, ETH and stable coins can be mapped to Senet Chain by an asset bridge. The realization method is to lock a certain amount of tokens on the original chain then generate a corresponding number of tokens on Senet Chain.
+
+Heco encourages developers to provide more decentralized cross-chain solution.
+
+### Four Stages of Senet Chain
+
+| Stage  | Features                                                     | Time         |
+| ------ | ------------------------------------------------------------ | ------------ |
+| Alpha  | The initial version of Senet Chain. Users can participate in dApp on Senet Chain with a low threshold. | 2023 Q2      |
+| Beta   | Enable Layer2 technology. Improve Chain performance.         | 2023 Q3 - Q4 |
+| RC     | Deploy the initial validator. The first batch of cooperative games are connected to the Senet Chain. | 2024 Q1      |
+| Stable | Landing of large-scale commercial game applications. Support a variety of traditional games to run smoothly on the chain | 2024 Q2      |
+
+## How to integrate the Senet Chain to web3 wallets?
+<Cards>
+  <Card icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+  <path fillRule="evenodd" d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z" clipRule="evenodd" />
+</svg>
+  } title="Built In Senet Chain" href="/senet-chain/built">
+  </Card>
+</Cards>
+

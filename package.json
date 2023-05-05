@@ -1,0 +1,31 @@
+{
+    "name": "senet-wiki",
+    "version": "0.0.1",
+    "description": "The Senet Wiki",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/senetnetwork/wiki.git"
+    },
+    "author": "Senet Network <hi@senetnetwork.io>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/senetnetwork/wiki/issues/new"
+    },
+    "homepage": "https://github.com/senetnetwork/wiki/",
+    "dependencies": {
+        "next": "^13.0.6",
+        "nextra": "latest",
+        "nextra-theme-docs": "^2.5.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "18.11.10",
+        "typescript": "^4.9.3"
+    }
+}
