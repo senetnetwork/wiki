@@ -1,6 +1,6 @@
 [![Discord](https://img.shields.io/discord/934380160113844294?color=green&label=senet%20%7C%20discord%20%F0%9F%91%8B&logo=discord&style=flat-square)](https://discord.gg/CetY6Y4)
 [![Twitter Follow](https://img.shields.io/twitter/follow/senetnetwork?logo=twitter&style=social)](https://twitter.com/senetnetwork)
-![website](https://img.shields.io/website?color=green&label=senetnetwork.com&style=flat-square&url=https%3A%2F%2Fsenetnetwork.com)
+[![website](https://img.shields.io/website?color=green&label=senetnetwork.com&style=flat-square&url=https%3A%2F%2Fsenetnetwork.com)](https://senetnetwork.com)
 
 <div align="center" style="margin-top: 1em; margin-bottom: 3em;">
   <a href="https://senet.wiki"><img alt="senet logo" src="./public/senet-logo-2x.png" alt="senet" width="125"></a>
