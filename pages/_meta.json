@@ -6,9 +6,7 @@
     "index": "Introduction",
     "guide": "Quick Start",
     "submit": {
-        "title": "Submit Game ↗",
-        "href": "",
-        "newWindow": false
+        "title": "Submit Game"
     },
     "-- solutions": {
         "type": "separator",

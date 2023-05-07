@@ -1,7 +1,7 @@
-import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
+  navigation: true,
   head: (
     <>
       <meta property="og:title" content="Senet Wiki" />
@@ -20,7 +20,21 @@ const config: DocsThemeConfig = {
       titleTemplate: '%s – Senet Wiki'
     }
   },
-  primaryHue: {"dark":73,"light":72.5},
+
+  banner: {
+    key: 'Alpha-release',
+      text: (
+       <a href="https://github.com/senetnetwork/wiki" target="_blank">
+        🎉 Senet Wiki Alpha is released. Read more →
+      </a>)
+  },
+
+  primaryHue: { 
+    dark: 74,
+    light: 72
+    },
+   
+
   logo: (
     <>
      <svg height="40" viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +55,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: 'https://discord.com/invite/qh9dG9EwQx',
   },
-  docsRepositoryBase: 'https://github.com/senetnetwork/wiki/tree/main/',
+  docsRepositoryBase: 'https://github.com/senetnetwork/wiki',
   editLink: {
     text: 'Edit this page on GitHub →'
   },
