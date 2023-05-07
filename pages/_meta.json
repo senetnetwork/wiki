@@ -5,9 +5,7 @@
     },
     "index": "Introduction",
     "guide": "Quick Start",
-    "submit": {
-        "title": "Submit Game"
-    },
+    "submit": "Submit Cooperation",
     "-- solutions": {
         "type": "separator",
         "title": "SOLUTIONS"
