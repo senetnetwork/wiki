@@ -3,7 +3,7 @@
 [![website](https://img.shields.io/website?color=green&label=senetnetwork.com&style=flat-square&url=https%3A%2F%2Fsenetnetwork.com)](https://senetnetwork.com)
 
 <div align="center" style="margin-top: 1em; margin-bottom: 3em;">
-  <a href="https://senet.wiki"><img alt="senet logo" src="./public/senet-logo-2x.png" alt="senet" width="125"></a>
+  <a href="https://senet.wiki"><img alt="senet logo" src="./public/senet-logo-1x.png" alt="senet" width="125"></a>
   <h1>🙋 Welcome to senet.wiki!</h1>
 </div>
 
