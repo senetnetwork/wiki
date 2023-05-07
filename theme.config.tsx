@@ -33,7 +33,6 @@ const config: DocsThemeConfig = {
     dark: 74,
     light: 72
     },
-   
 
   logo: (
     <>
